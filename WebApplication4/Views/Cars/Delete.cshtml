@@ -1,0 +1,5 @@
+﻿@model CarsVM
+<form asp-action="Delete" asp-controller="Cars" method="post">
+    <select asp-for="Car" asp-items="Model.Cars"></select>
+    <input type="submit" />
+</form>

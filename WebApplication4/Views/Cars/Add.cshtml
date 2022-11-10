@@ -1,0 +1,8 @@
+﻿@model Car
+
+<form asp-action="Add" asp-controller="Cars" method="post">
+    <input type="text" asp-for="Vendor" placeholder="Car Vendor" />
+    <input type="text" asp-for="Model" placeholder="Car Model" />
+    <input type="text" asp-for="Year" placeholder="year of release" />
+    <input type="submit" />
+</form>

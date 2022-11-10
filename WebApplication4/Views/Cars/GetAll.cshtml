@@ -1,0 +1,20 @@
+﻿@model List<Car>
+
+<table cellspacing="0" cellpadding="10" border="1">
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr>
+    @foreach (var car in Model)
+    {
+       <tr>
+           <td text-align="center">@car.Vendor</td>
+           <td text-align="center">@car.Model</td>
+           <td text-align="center">@car.Year</td>
+       </tr> 
+    }
+</table>
+<a href="Add">Add</a>
+<a href="Delete">Delete</a>
+
